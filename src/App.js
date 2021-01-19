@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+<<<<<<< HEAD
 
 import { CardList } from './components/card-list/card-list.component';
 import { Loading } from './components/loading/loading.component';
+=======
+import { render } from '@testing-library/react';
+
+import { CardList } from './components/card-list/card-list.component';
+>>>>>>> 22c813d7930926309b1f2fab620527b5ce6bf773
 
 import { SearchBox } from './components/search-box/search-box.component';
 
@@ -39,7 +45,7 @@ class App extends Component {
       monster.name.toLowerCase().includes(searchField.toLowerCase())
       );
 
-      if(this.state.monsters.length === 0) {
+      if (this.state.monsters.length === 0) {
         return <Loading />
       } else {
         return (
