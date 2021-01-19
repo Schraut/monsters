@@ -22,11 +22,11 @@ class App extends Component {
 
   //API to get some random users names to add to monsters array
   //Lifecycle method and also a promise.
-  // componentDidMount() {
-  //   fetch('https://jsonplaceholder.typicode.com/users')
-  //   .then(response => response.json())
-  //   .then(users => this.setState({monsters: users}));
-  // }
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(users => this.setState({monsters: users}));
+  }
 
   handleChange = e => {
     this.setState({ searchField: e.target.value });
